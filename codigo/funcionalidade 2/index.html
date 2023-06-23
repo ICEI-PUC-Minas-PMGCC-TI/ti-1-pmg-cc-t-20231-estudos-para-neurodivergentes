@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Post</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .container>h2 {
+      background-color: crimson;
+      padding: 10px 0;
+    }
+
+    .thread {
+      padding: 10px;
+      border: 1px dashed crimson;
+    }
+
+    .respostas {
+      margin: 0 10px;
+    }
+
+    .respostas p {
+      font-size: 18px;
+      color: black;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h2>Post</h2>
+    <div class="thread">
+      <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid dicta autem magnam unde eum quibusdam!
+        Sapiente suscipit at adipisci tempora.
+        <button>Mostrar Respostas</button>
+      </h2>
+      <div style="display:none" class="respostas" id="minhaDiv">
+        <p>Lorem ipsum dolor sit amet.</p>
+        <hr>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <hr>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <hr>
+        <form>
+          <textarea></textarea>
+          <input type="submit" name="acao" value="Enviar!" />
+        </form>
+        <button id="btnOcultar" onclick="MudarEstado('minhaDiv')">Ocultar Respostas</button>
+      </div>
+    </div>
+  </div>
+  <script>
+    let buttonResposta = document.querySelectorAll('.thread button');
+
+    for (let i = 0; i < buttonResposta.length; i++) {
+      buttonResposta[i].addEventListener('click', () => {
+        let respostas = document.querySelectorAll('.respostas');
+        respostas[i].style.display = "block";
+      });
+    }
+
+    let forms = document.querySelectorAll('form');
+
+    for (let i = 0; i < forms.length; i++) {
+      forms[i].addEventListener('submit', (e) => {
+        e.preventDefault();
+        let conteudo = document.querySelectorAll('textarea')[i];
+        forms[i].insertAdjacentHTML('beforebegin', '<p>' + conteudo.value + '</p><hr>');
+
+        // Limpar o valor do textarea após enviar o formulário
+        conteudo.value = "";
+      });
+    }
+
+    function MudarEstado(el) {
+      var display = document.getElementById(el).style.display;
+      if (display === "none")
+        document.getElementById(el).style.display = 'block';
+      else
+        document.getElementById(el).style.display = 'none';
+    }
+
+  </script>
+</body>
+
+</html>
