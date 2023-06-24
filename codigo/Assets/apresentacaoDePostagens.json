@@ -1,0 +1,16 @@
+{
+    "postagens": [
+        {
+            "id": 1,
+            "título": "Inclusão de Neurodivergentes",
+            "subtítulo": "Os desafios para acolher alunos...",
+            "capa": "capa.jpg",
+            "legenda": "Alunos em sala de aula",
+            "texto": "[...] Inclusão de alunos com TDAH [...]",
+            "tipo": "Notícia",
+            "tema": ["TDAH", "Inclusão", "Escola"],
+            "autores": "Maria Rosa de Cristo Lima",
+            "referências": "ANTONETTA, Susanne. 2005[...]"
+        }
+    ]
+}
