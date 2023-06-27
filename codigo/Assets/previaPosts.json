@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1
+        ,"capa": "capa.jpg"
+        ,"title": "neurodivergentes"
+        ,"tema":"Sobre inclusão"
+        ,"tipo": "noticia"
+        ,"link": "previaPosts-tmp.html"
+    },
+    {
+        "id": 2
+        ,"title": "neurodivergentes2"
+        ,"tema": "Sobre inclusão"
+        ,"capa": "capa2.jpg"
+        ,"tipo": "noticia2"
+        ,"link": "previaPosts-tmp.html"
+    },
+    {
+        "id": 3
+        ,"title": "neurodivergentes3"
+        ,"capa": "capa3.jpg"
+        ,"tipo": "noticia3"
+        ,"link": "previaPosts-tmp.html"
+    },
+    {
+        "id": 4
+        ,"title": "neurodivergentes4"
+        ,"capa": "capa4.jpg"
+        ,"tipo": "noticia4"
+        ,"link": "previaPosts-tmp.html"
+    }
+]

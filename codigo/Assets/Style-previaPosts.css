@@ -1,0 +1,45 @@
+body {
+    background-color: lightgoldenrodyellow;
+    color: #081121;
+}
+
+.A ul {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #F0A8C6;
+    height: 100%;
+    width: 100%;
+}
+
+.A img {
+    vertical-align: top;
+    height: 30px;
+}
+
+.A li {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.A li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.A li a:hover {
+    background-color: #CC70B3;
+}
+
+.posts {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1200px;
+}
