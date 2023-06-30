@@ -1,0 +1,38 @@
+
+.container {
+  background-color: #dff0ff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+h1, h2 {
+  position: center;
+}
+
+.form-control {
+  border-color: #007BFF;
+}
+
+.post {
+  border: 1px solid #031c36;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #98c8eb;
+  margin-bottom: 10px;
+}
+
+.post-title {
+    font-size: 24px;
+    font-weight: bold;
+  color: #092544;
+}
+
+.post-content {
+    font-size: 18px;
+  color: #000000;
+}
+
+.error-message {
+    color: red;
+  }
