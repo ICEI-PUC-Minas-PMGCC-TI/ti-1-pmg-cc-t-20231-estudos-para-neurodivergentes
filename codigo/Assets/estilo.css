@@ -1,457 +1,217 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'AveriaRegular';
+  }
+
 body{
-    background-color: #fffaff;
-    display: flex;
-    margin: 0px;
-    padding: 0px;
-}
+    background-color: #dadada;
+    overflow-x: hidden;
+  }
+  
 
 section{
-    background-color: #ffecff;
-    width: 1300px;
-    padding: 20px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-area: 'letreiro'
-    'formulario';
-    margin: auto;
+    background-color: aliceblue;
+    max-width: 1200px;
+    min-width: 280px;
+    padding: 30px;
+    margin: 0px auto;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
 h1{
-    font-size: 2rem;
-    margin: 0px auto;
-    padding: 10px;
+    color: #000000;
+    margin: 10px 10px 5px 0px;
+    font-size: 200%;
 }
 
 p{
-    font-size: 1.5rem;
+    font-size: 25px;
+    text-align: justify;
     padding: 10px;
-    margin: 0px auto;
-}
-
-/*----------------------------------
-            Form
-------------------------------------*/
-
-#formulario{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: 'titulo titulo'
-    'subtitulo subtitulo'
-    'arqcapa arqcapa'
-    'legenda legenda'
-    'texto texto'
-    'texto texto'
-    'tipo tema'
-    'autor autor'
-    'referencia referencia'
-    'null null'
-    'botoes botoes';
-    justify-content: space-around;
-    padding: 40px;
-    
-}
-
-#titulo{
-    grid-area: titulo;
-    margin: 15px;
 }
 
 #subtitulo{
-    grid-area: subtitulo;
-    margin: 15px;
+    font-size: 20px;
 }
 
-#arqcapa{
-    grid-area: arqcapa;
-    margin: 15px;
-    width: 80%;
+.fotos{
+    max-width: 60%;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    margin-top: 10px;
 }
 
-#arqcapa input{
-    padding: 20px 20px 0px 20px;
-}
-
-#legenda{
-    grid-area: legenda;
-    margin: 15px;
-}
-
-#texto{
-    grid-area: texto;
-    margin: 15px;
-}
-
-#texto textarea{
-    height: 90px;
-}
-
-#tipo{
-    grid-area: tipo;
-    margin: 15px;
-}
-
-#tipo label{
-    margin: 10px;
-    font-size: 1.2rem;
-}
-
-#tipo input{
-    width: 1.2rem;
-    height: 1.2rem;
-}
-
-#tema{
-    grid-area: tema;
-    margin: 15px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: 'legenda legenda legenda'
-    'escola lazer familia'
-    'amigos saude inclusao';
-}
-
-#tema div{
-    display: inline;
-}
-
-#tema label{
-    margin: 0px;
-    font-size: 1.2rem;
-}
-
-#tema input{
-    width: 1.2rem;
-    height: 1.2rem;
-}
-
-#legendaTema{grid-area: legenda;}
-
-#temaEscola{ grid-area: escola;}
-
-#temaLazer{ grid-area: lazer;}
-
-#temaFamilia{ grid-area: familia;}
-
-#temaAmigos{ grid-area: amigos;}
-
-#temaSaude{ grid-area: saude;}
-
-#temaInclusao{ grid-area: inclusao;}
-
-#autor{
-    grid-area: autor;
-    margin: 15px;
-}
-
-#referencia{
-    grid-area: referencia;
-    margin: 15px;
-}
-
-input{
-    width: 90%;
-    height: 40px;
-    border-width: 0px;
-    border-radius: 10px;
-}
-
-
-textarea{
-    width: 100%;
-    height: 50px;
-    border: 0px;
-    font-size: 1.2rem;
-    padding: 10px;
-    border-radius: 10px;
-}
-
-#botoes{
-    grid-area: botoes;
-    padding: 20px;
+.centralizar{
     display: flex;
-    justify-content: right;
-    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0px;
 }
 
-#btnLimpar{
-    margin: 5px;
-    background-color: rgb(250, 115, 115);
-    width: 20%;
-    font-size: 1.2rem;
-    height: 60px;
-    border: 0px;
-    border-radius: 15px;
+#tela{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: 'card card card';
+  grid-gap: 10px;
 }
 
-#btnEnviar{
-    margin: 5px;
-    background-color: rgb(111, 241, 111);
-    width: 25%;
-    font-size: 1.2rem;
-    height: 60px;
-    border: 0px;
-    border-radius: 15px;
+.card{
+  background-color: #bcbcff;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  margin: 0px auto;
 }
 
-#btnLimpar:hover{
-    background-color: rgb(187, 14, 14);
+.card-title{
+  font-size: 22px;
 }
 
-#btnEnviar:hover{
-    background-color: rgb(19, 126, 19);
+.card-text{
+  font-size: 18px;
 }
 
-legend{
-    font-size: 1.5rem;
-    margin: 5px;
+.list-group-item{
+  list-style: none;
 }
 
-.mais{
-    width: 30px;
-    height: 30px;
-    border: 0px;
-    border-radius: 10px;
-    background-color: #5e585e;
-    margin: 10px;
-    color: #ffecff;
-    font-size: large;
+.legenda{
+    font-size: 15px;
+    color: gray;
 }
 
-/*----------------------------------
-            Media Queries
-------------------------------------*/
-
-@media (max-width: 480px) {
-    h1{
-        font-size: 1.6rem;
-        margin: 0px auto;
-        padding: 6px;
-    }
-
-    p{
-        font-size: 1.0rem;
-        margin: 0px auto;
-        text-align: justify;
-    }
-
-    #formulario{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-areas: 'titulo'
-        'subtitulo'
-        'arqcapa'
-        'legenda'
-        'texto'
-        'texto'
-        'tipo'
-        'tema'
-        'autor'
-        'referencia'
-        'null'
-        'botoes'
-        'botoes';
-        justify-content: center;
-        padding: 10px;
-    }
-   
-    section{
-        background-color: #ffecff;
-        width: 100px;
-        padding: 10px 20px 0px 0px;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-area: 'letreiro'
-        'formulario';
-    }
-
-    textarea{
-        width: 100%;
-        height: 80px;
-        border: 0px;
-        font-size: 1.2rem;
-        border-radius: 10px;
-    }
-    
-    #arqcapa{
-        grid-area: arqcapa;
-        width: 100%;
-    }
-
-    #tema div{
-        display: block;
-        padding: 0px;
-        margin-right: 9px;
-        margin-left: 20px;
-    }
-    
-    #tema label{
-        font-size: 1.2rem;
-    }
-
-    #tema{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: 'legenda legenda'
-        'escola lazer'
-        'familia amigos'
-        'saude inclusao';
-    }
-
-    #botoes{
-        
-        padding: 10px;
-      
-    }
-
-    #btnLimpar{
-        
-        width: 40%;
-       
-    }
-    
-    #btnEnviar{
-     
-        width: 45%;
-       
-    }
-
+.btn{
+  background-color: rgb(114, 125, 223);
 }
   
-@media (max-width: 768px) {
-    h1{
-        font-size: 1.6rem;
-        margin: 0px auto;
-        padding: 6px;
+  a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  a:hover {
+    opacity: 0.7;
+  }
+
+  .logo {
+    font-size: 28px;
+    letter-spacing: 4px;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #3030ff;
+    height: 12vh;
+  }
+  
+  .nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .nav-list li {
+    margin-left: 16px;
+  }
+
+  .nav-list li > a {
+    font-size: 20px;
+  }
+  
+  .mobile-menu {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+    transition: 0.3s;
+  }
+
+  @media (max-width: 999px) {
+    body {
+      overflow-x: hidden;
     }
 
-    p{
-        font-size: 1.2rem;
-        margin: 0px auto;
-        padding-left: 30px;
-        text-align: justify;
+    #tela{
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-areas: 'card';
+      justify-content: center;
+       align-items: center;
     }
 
-    #formulario{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-areas: 'titulo'
-        'subtitulo'
-        'arqcapa'
-        'legenda'
-        'texto'
-        'texto'
-        'tipo'
-        'tema'
-        'autor'
-        'referencia'
-        'null'
-        'botoes'
-        'botoes';
-        justify-content: center;
-        padding: 10px;
+
+    .card {
+      margin: 0 auto;
     }
+  
    
-    section{
-        background-color: #ffecff;
-        width: 768px;
-        padding: 10px 20px 0px 0px;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-area: 'letreiro'
-        'formulario';
+
+    .nav-list {
+      position: absolute;
+      top: 8vh;
+      right: 0;
+      width: 50vw;
+      height: 92vh;
+      background: #3030ff;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      transform: translateX(100%);
+    }
+    .nav-list li {
+      margin: 0px auto;
+     
+      opacity: 0;
+    }
+    .mobile-menu {
+      display: block;
     }
 
-    textarea{
-        width: 100%;
-        height: 80px;
-        border: 0px;
-        font-size: 1.2rem;
-    
-        border-radius: 10px;
-    }
-    
-    #arqcapa{
-        grid-area: arqcapa;
-        width: 100%;
+    .fotos{
+        max-width: 80%;
+       
     }
 
-    #tema div{
-        display: inline;
-        padding: 0px;
+    .nav-list.active {
+      transform: translateX(0);
     }
-    
-    #tema label{
-        margin: 0px;
-        font-size: 1.2rem;
-    }
-    
-}
+  
 
-@media (max-width: 1024px) {
-    h1{
-        font-size: 1.6rem;
-        margin: 0px auto;
-        padding: 6px;
+    .nav-list:not(.active) {
+      display: none;
     }
-
-    p{
-        font-size: 1.2rem;
-        margin: 0px auto;
-        padding-left: 30px;
-        text-align: justify;
+  }
+  
+  
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
     }
-
-    #formulario{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-areas: 'titulo'
-        'subtitulo'
-        'arqcapa'
-        'legenda'
-        'texto'
-        'texto'
-        'tipo'
-        'tema'
-        'autor'
-        'referencia'
-        'null'
-        'botoes';
-        justify-content: center;
-        padding: 10px;
+    to {
+      opacity: 1;
+      transform: translateX(0);
     }
-   
-    section{
-        background-color: #ffecff;
-        width: 768px;
-        padding: 10px 20px 0px 0px;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-area: 'letreiro'
-        'formulario';
-    }
-
-    textarea{
-        width: 100%;
-        height: 80px;
-        border: 0px;
-        font-size: 1.2rem;
-    
-        border-radius: 10px;
-    }
-    
-    #arqcapa{
-        grid-area: arqcapa;
-        width: 100%;
-    }
-
-    #tema div{
-        display: inline;
-        padding: 0px;
-    }
-    
-    #tema label{
-        margin: 0px;
-        font-size: 1.2rem;
-    }
-   
-}
+  }
+  
+  .mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+  }
+  
+  .mobile-menu.active .line2 {
+    opacity: 0;
+  }
+  
+  .mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+  }
