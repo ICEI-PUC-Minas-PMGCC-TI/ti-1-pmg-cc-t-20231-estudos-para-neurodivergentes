@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/averia" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="js/postagens.js"></script>
+    <title>Página Inicial</title>
+</head>
+<body>
+    <header>
+        <nav id="nav">
+          <a class="logo" href="index.html">GUIA DIVERGENTE</a>
+          <div class="mobile-menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+          <ul class="nav-list">
+            <li><a href="feed.html">FEED</a></li>
+            <li><a href="chat.html">CHAT</a></li>
+            <li><a onclick="testaLogin()" href="#">MEU PERFIL</a></li>
+          </ul>
+        </nav>
+      </header>
+    
+      <section id="section">
+        <div id="cabeca">
+            <h1 id="title">Título</h1>
+            <h5 id="subtitle">Sub-título</h5>
+            <div id="tag">
+                <a id="arroba" onclick="entraPerfil()"><img id="fotoPerfil1" src="images/fotoPerfil.png" alt="Erro ao carregar imagem."></a>
+                <p class="tag" id="type">Tipo</p>
+                <p class="tag" id="genre">Tema</p>
+                <p class="tag" id="autor">Autor</p>
+            </div>
+        </div>
+        <div class="centralizar">
+            <img class="fotos" id="capa" src="" alt="Não foi possível carregar a imagem.">
+          </div>
+    
+          <div class="centralizar">
+            <p class="legenda" id="description"></p>
+          </div>
+          <div class="centralizar">
+            <p class="legenda" id="description"></p>
+          </div>
+          <p class="paragrafo" id="p1"></p>
+          <p class="paragrafo" id="p2"></p>
+          <p class="paragrafo" id="p3"></p>
+          <p id="p4"></p>
+         
+            <div>
+                <h4>Referências</h4>
+                <ul class="info">
+                    <li id="ref1"></li>
+                    <li id="ref2"></li>
+                </ul>
+            </div>
+       
+            <div id="comentarios">
+              <h4>Comentários:</h4>
+
+              <div id="comentariosContainer"></div>
+            
+              <form id="commentForm">
+              
+                <div id="enviarComment">
+                  <textarea id="comment" rows="3" cols="30" class="border-primary" required>Deixe um comentário</textarea><br>
+            
+                <input type="submit" value="Enviar">
+                </div>
+              </form>
+            
+            </div>
+      </section>
+
+        <footer>
+            <ul class="foot-list">
+                <li>OUTRAS PÁGINAS</li>
+                <li><a href="sobrenos.html">SOBRE NÓS</a></li>
+                <li><a href="https://www.pucminas.br/destaques/Paginas/default.aspx">Portal PUC Minas</a></li>
+              </ul>
+
+              <img id="puc" src="images/logopuc.png" alt="Não foi possível carregar a imagem.">
+        </footer>
+
+      
+      
+      <script src="js/roteiro.js"></script>
+      <script src="js/navbar.js"></script>
+      
+</body>
+</html>

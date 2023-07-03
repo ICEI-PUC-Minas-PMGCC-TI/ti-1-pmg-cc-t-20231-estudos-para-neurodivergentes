@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/form.css">
+    <title>Submeter Postagens</title>
+</head>
+
+<body>
+   
+    <section id="section">
+        <h1>Submeter Postagens</h1>
+
+        <p>Preencha corretamente o formulário e envie para publicar uma nova postagem no Guia Divergente.</p>
+        
+        <form id="formulario">
+            <div id="titulo">
+                <legend>Título *</legend>
+                <textarea required="required" id="campoTitulo" value="titulo" minlength="20" maxlength="120"></textarea>
+            </div>
+            <div id="subtitulo">
+                <legend>Subtítulo *</legend>
+                <textarea required="required" id="campoSubtitulo" value="subtitulo" minlength="30" maxlength="130"></textarea>
+            </div>
+            <div id="arqcapa">
+                <legend>Foto de Capa *</legend>
+                <input id="campoCapa" required="required" type="file" name="arquivo" value="capa">
+            </div>
+            <div id="legenda">
+                <legend>Legenda para capa *</legend>
+                <textarea required="required" id="campoLegenda" value="legenda" minlength="20" maxlength="100"></textarea>
+            </div>
+            <div id="texto">
+                <legend>Texto *</legend>
+                <div><textarea required="required" id="campoTexto1" value="primeiroParagrafo" minlength="40" maxlength="1000">Primeiro Parágrafo *</textarea></div>
+                <div><textarea required="required" id="campoTexto2" value="segundoParagrafo" minlength="40" maxlength="500">Segundo Parágrafo *</textarea></div>
+                <div><textarea required="required" id="campoTexto3" value="terceiroParagrafo" minlength="40" maxlength="500">Terceiro Parágrafo *</textarea></div>
+                <div><textarea id="campoTexto4" value="quartoParagrafo" minlength="40" maxlength="500">Quarto Parágrafo</textarea></div>
+            </div>
+            <br>
+            <div id="tipo">
+                <legend>Tipo *</legend>
+                <div><input type="radio" name="tipo" checked="checked" id="tipoGuia" value="guia"/>
+                <label for="tipoGuia">Guia</label></div>
+                <div><input type="radio" name="tipo" id="tipoArtigo" value="artigo"/>
+                <label for="tipoArtigo">Artigo</label></div>
+                <div><input type="radio" name="tipo" id="tipoNoticia" value="noticia"/>
+                <label for="tipoNoticia">Notícia</label></div>
+            </div>
+            <div id="tema">
+                <legend id="legendaTema">Tema *</legend>
+                <div><input type="checkbox" id="temaEscola" name="tema" value="escola">
+                <label for="temaEscola">Escola</label></div>
+                <div><input type="checkbox" name="tema" id="temaLazer" value="lazer">
+                <label for="temaLazer">Lazer</label></div>
+                <div><input type="checkbox" id="temaFamilia" name="tema" value="familia">
+                <label for="temaFamilia">Família</label></div>
+                <div><input type="checkbox" id="temaAmigos" name="tema" value="amigos">
+                <label for="temaAmigos">Amigos</label></div>
+                <div><input type="checkbox" name="tema" id="temaSaude" value="saude">
+                <label for="temaSaude">Saúde</label></div>
+                <div> <input type="checkbox" id="temaInclusao" name="tema" value="inclusao">
+                <label for="temaInclusao">Inclusão</label></div>
+                <div> <input type="checkbox" id="temaBemestar" name="tema" value="bem-estar">
+                <label for="temaBemestar">Bem-estar</label></div>
+                <div> <input type="checkbox" id="temaComunidade" name="tema" value="comunidade">
+                <label for="temaComunidade">Comunidade</label></div>
+                <div> <input type="checkbox" id="temaCiencia" name="tema" value="ciencia">
+                <label for="temaCiencia">Ciência</label></div>
+                <div> <input type="checkbox" id="temaVariado" name="tema" value="variado">
+                <label for="temaVariado">Variado</label></div>
+                
+            </div>
+        
+            <div id="referencia">
+                <legend>Referência</legend>
+                <div><textarea id="campoReferencia1" value="ref1" minlength="20" maxlength="200">Referência 1</textarea>
+                <div><textarea id="campoReferencia2" value="ref2" minlength="20" maxlength="200">Referência 2</textarea>
+
+            </div>     
+
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+
+            <div id="botoes">
+                <button id="btnLimpar" type= "reset" >Limpar</button>
+                <button id="btnEnviar" >Enviar</button>
+            </div>
+        </form>
+
+        <div id="tela">
+            
+        </div>
+
+    </section>
+
+    
+    <script src="js/roteiro.js"></script>
+    <script>document.onload(iniciaPag())</script>
+</body>
+</html>

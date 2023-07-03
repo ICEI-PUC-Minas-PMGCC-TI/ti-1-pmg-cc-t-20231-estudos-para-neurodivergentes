@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="stylesheet" href="css/form.css">
+    <title>Criar Chat</title>
+</head>
+
+<body>
+   
+    <section id="section">
+        <h1>Criar Chat</h1>
+
+        <p>Preencha corretamente o formulário e envie para publicar uma nova conversa no Guia Divergente.</p>
+        
+        <form id="formulario">
+            <div id="titulo">
+                <legend>Título *</legend>
+                <textarea required="required" id="campoTitulo" value="titulo" minlength="20" maxlength="120"></textarea>
+            </div>
+            <div id="subtitulo">
+                <legend>Subtítulo *</legend>
+                <textarea required="required" id="campoSubtitulo" value="subtitulo" minlength="30" maxlength="130"></textarea>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+
+            <div id="botoes">
+                <button id="btnLimpar" type= "reset" >Limpar</button>
+                <button id="btnEnviar" >Enviar</button>
+            </div>
+        </form>
+
+        <div id="tela">
+            
+        </div>
+
+    </section>
+
+    
+    <script src="js/chat.js"></script>
+</body>
+</html>

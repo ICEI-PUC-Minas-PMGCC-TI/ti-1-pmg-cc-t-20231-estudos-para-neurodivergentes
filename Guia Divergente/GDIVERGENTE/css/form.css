@@ -1,0 +1,573 @@
+nav.dark{
+    background-color:#242494;
+  }
+  section.colored{
+  background-color: darkorange;
+  }
+  section.dark{
+    background-color:#292c35;
+  }
+  section.dark h1{
+    color: white;
+  }
+  body.dark {
+   color: white;
+    background: black;
+  }
+  .darkmode .container-sm {
+    height:150px;
+    background-color: #9ab2db; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px; 
+  }
+  .darkmode .container-sm > div {
+    display: flex;
+  }
+  
+  body.dark .container-sm {
+    background-color: #1a1c2400; 
+  }
+  body.dark .label{
+    background-color: black;
+  }
+  body.dark .label .ball{
+     background-color: #1a1c24;
+  } 
+  
+  body.colored {
+   color: #071963;
+    background: #e8bc76;
+  
+  }
+  .colored p{
+    color: #071963;
+  }
+  .dark p {
+    color:#d0cccc
+  }
+  .dark .card{
+    background-color: #262676;
+  }
+  .dark #comentarios{
+    background-color: #262676;
+  }
+  .dark h5{
+    color: white;
+  }
+
+
+
+
+body{
+    background-color: #dadada;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'AveriaRegular';
+}
+
+section{
+    background-color: aliceblue;
+    width: 1300px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-area: 'letreiro'
+    'formulario';
+    margin: auto;
+}
+
+h1{
+    font-size: 2rem;
+    margin: 0px auto;
+    padding: 10px;
+}
+
+p{
+    font-size: 1.5rem;
+    padding: 10px;
+    margin: 0px auto;
+}
+
+/*----------------------------------
+            Form
+------------------------------------*/
+
+#formulario{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'titulo titulo'
+    'subtitulo subtitulo'
+    'arqcapa arqcapa'
+    'legenda legenda'
+    'texto texto'
+    'texto texto'
+    'tipo tema'
+    'autor autor'
+    'referencia referencia'
+    'null null'
+    'botoes botoes';
+    justify-content: space-around;
+    padding: 40px;
+    
+}
+
+#titulo{
+    grid-area: titulo;
+    margin: 15px;
+}
+
+#subtitulo{
+    grid-area: subtitulo;
+    margin: 15px;
+}
+
+#arqcapa{
+    grid-area: arqcapa;
+    margin: 15px;
+    width: 80%;
+}
+
+#arqcapa input{
+    padding: 20px 20px 0px 20px;
+}
+
+#legenda{
+    grid-area: legenda;
+    margin: 15px;
+}
+
+#texto{
+    grid-area: texto;
+    margin: 15px;
+}
+
+#texto textarea{
+    height: 90px;
+}
+
+#tipo{
+    grid-area: tipo;
+    margin: 15px;
+}
+
+#tipo label{
+    margin: 10px;
+    font-size: 1.2rem;
+}
+
+#tipo input{
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+#tema{
+    grid-area: tema;
+    margin: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 'legenda legenda legenda'
+    'escola lazer familia'
+    'amigos saude inclusao'
+    'comunidade ciência bem-estar'
+    'variado variado variado';
+}
+
+#tema div{
+    display: inline;
+}
+
+#tema label{
+    margin: 0px;
+    font-size: 1.2rem;
+}
+
+#tema input{
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+#legendaTema{grid-area: legenda;}
+
+#temaEscola{ grid-area: escola;}
+
+#temaLazer{ grid-area: lazer;}
+
+#temaFamilia{ grid-area: familia;}
+
+#temaAmigos{ grid-area: amigos;}
+
+#temaSaude{ grid-area: saude;}
+
+#temaInclusao{ grid-area: inclusao;}
+
+#temaCiencia{ grid-area: ciencia;}
+
+#temaComunidade{ grid-area: comunidade;}
+
+#temaVariado{ grid-area: variado;}
+
+#temaBemestar{ grid-area: bem-estar;}
+
+#autor{
+    grid-area: autor;
+    margin: 15px;
+}
+
+#referencia{
+    grid-area: referencia;
+    margin: 15px;
+}
+
+input{
+    width: 90%;
+    height: 40px;
+    border-width: 0px;
+    border-radius: 10px;
+}
+
+
+textarea{
+    width: 100%;
+    height: 50px;
+    border: 0px;
+    font-size: 1.2rem;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#botoes{
+    grid-area: botoes;
+    padding: 20px;
+    display: flex;
+    justify-content: right;
+    flex-wrap: wrap;
+}
+
+#btnLimpar{
+    margin: 5px;
+    background-color: rgb(250, 115, 115);
+    width: 20%;
+    font-size: 1.2rem;
+    height: 60px;
+    border: 0px;
+    border-radius: 15px;
+}
+
+#btnEnviar{
+    margin: 5px;
+    background-color: rgb(111, 241, 111);
+    width: 25%;
+    font-size: 1.2rem;
+    height: 60px;
+    border: 0px;
+    border-radius: 15px;
+}
+
+#btnLimpar:hover{
+    background-color: rgb(187, 14, 14);
+}
+
+#btnEnviar:hover{
+    background-color: rgb(19, 126, 19);
+}
+
+legend{
+    font-size: 1.5rem;
+    margin: 5px;
+}
+
+.mais{
+    width: 30px;
+    height: 30px;
+    border: 0px;
+    border-radius: 10px;
+    background-color: #5e585e;
+    margin: 10px;
+    color: #ffecff;
+    font-size: large;
+}
+
+/*----------------------------------
+            Media Queries
+------------------------------------*/
+
+@media (max-width: 480px) {
+    h1{
+        font-size: 1.6rem;
+        margin: 0px auto;
+        padding: 6px;
+    }
+
+    p{
+        font-size: 1.0rem;
+        margin: 0px auto;
+        text-align: justify;
+    }
+
+    #formulario{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 'titulo'
+        'subtitulo'
+        'arqcapa'
+        'legenda'
+        'texto'
+        'texto'
+        'tipo'
+        'tema'
+        'autor'
+        'referencia'
+        'null'
+        'botoes'
+        'botoes';
+        justify-content: center;
+        padding: 10px;
+    }
+   
+    section{
+        
+        width: 100px;
+        padding: 10px 20px 0px 0px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-area: 'letreiro'
+        'formulario';
+    }
+
+    textarea{
+        width: 100%;
+        height: 80px;
+        border: 0px;
+        font-size: 1.2rem;
+        border-radius: 10px;
+    }
+    
+    #arqcapa{
+        grid-area: arqcapa;
+        width: 100%;
+    }
+
+    #tema div{
+        display: block;
+        padding: 0px;
+        margin-right: 9px;
+        margin-left: 20px;
+    }
+    
+    #tema label{
+        font-size: 1.2rem;
+    }
+
+    #tema{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 'legenda legenda'
+        'escola lazer'
+        'familia amigos'
+        'saude inclusao';
+    }
+
+    #botoes{
+        
+        padding: 10px;
+      
+    }
+
+    #btnLimpar{
+        
+        width: 40%;
+       
+    }
+    
+    #btnEnviar{
+     
+        width: 45%;
+       
+    }
+
+}
+  
+@media (max-width: 768px) {
+    h1{
+        font-size: 1.6rem;
+        margin: 0px auto;
+        padding: 6px;
+    }
+
+    p{
+        font-size: 1.2rem;
+        margin: 0px auto;
+        padding-left: 30px;
+        text-align: justify;
+    }
+
+    #formulario{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 'titulo'
+        'subtitulo'
+        'arqcapa'
+        'legenda'
+        'texto'
+        'texto'
+        'tipo'
+        'tema'
+        'autor'
+        'referencia'
+        'null'
+        'botoes'
+        'botoes';
+        justify-content: center;
+        padding: 10px;
+    }
+   
+    section{
+        
+        width: 768px;
+        padding: 10px 20px 0px 0px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-area: 'letreiro'
+        'formulario';
+    }
+
+    textarea{
+        width: 100%;
+        height: 80px;
+        border: 0px;
+        font-size: 1.2rem;
+    
+        border-radius: 10px;
+    }
+    
+    #arqcapa{
+        grid-area: arqcapa;
+        width: 100%;
+    }
+
+    #tema div{
+        display: inline;
+        padding: 0px;
+    }
+    
+    #tema label{
+        margin: 0px;
+        font-size: 1.2rem;
+    }
+    
+}
+
+@media (max-width: 1024px) {
+    h1{
+        font-size: 1.6rem;
+        margin: 0px auto;
+        padding: 6px;
+    }
+
+    p{
+        font-size: 1.2rem;
+        margin: 0px auto;
+        padding-left: 30px;
+        text-align: justify;
+    }
+
+    #formulario{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 'titulo'
+        'subtitulo'
+        'arqcapa'
+        'legenda'
+        'texto'
+        'texto'
+        'tipo'
+        'tema'
+        'autor'
+        'referencia'
+        'null'
+        'botoes';
+        justify-content: center;
+        padding: 10px;
+    }
+   
+    section{
+        
+        width: 768px;
+        padding: 10px 20px 0px 0px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-area: 'letreiro'
+        'formulario';
+    }
+
+    textarea{
+        width: 100%;
+        height: 80px;
+        border: 0px;
+        font-size: 1.2rem;
+    
+        border-radius: 10px;
+    }
+    
+    #arqcapa{
+        grid-area: arqcapa;
+        width: 100%;
+    }
+
+    #tema div{
+        display: inline;
+        padding: 0px;
+    }
+    
+    #tema label{
+        margin: 0px;
+        font-size: 1.2rem;
+    }
+   
+}
+/*---------------------
+    NAV BAR
+---------------------*/
+
+a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  a:hover {
+    opacity: 0.7;
+  }
+
+  .logo {
+    font-size: 28px;
+    letter-spacing: 4px;
+  }
+
+  nav {
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #3030ff;
+    height: 12vh;
+  }
+  
+  .nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+  }
+  
+  .nav-list li {
+    margin-left: 36px;
+    color: #fff;
+  }
+
+  .nav-list li > a {
+    font-size: 20px;
+  }

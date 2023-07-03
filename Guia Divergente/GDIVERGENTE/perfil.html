@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/averia" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/darkmode.css">
+    <title>Página Inicial</title>
+</head>
+<body>
+    <header>
+        <nav id="nav">
+          <a class="logo" href="index.html">GUIA DIVERGENTE</a>
+          <div class="mobile-menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+          <ul class="nav-list">
+            <li><a href="feed.html">FEED</a></li>
+            <li><a href="chat.html">CHAT</a></li>
+            <li><a onclick="testaLogin()" href="#">MEU PERFIL</a></li>
+          </ul>
+        </nav>
+      </header>
+      
+      <section id="section" class="containerPerfil">
+        <div class="fotoContainer">
+          <label id="labelFoto" for="fotoInput">Clique aqui para alterar foto</label>
+          <img id="fotoPerfil" src="images/fotoPerfil.png" alt="Não foi possível carregar imagem.">
+        </div>
+        
+        <div class="nome">
+            <h3>Nome</h3>
+            <p id="nome" class="informacoes">nome</p>
+        </div>
+        <div class="usuario">
+            <h3>Usuário</h3>
+            <p id="usuario" class="informacoes">usuário</p>
+        </div>
+        <div class="email">
+            <h3>E-mail</h3>
+            <p id="email" class="informacoes">e-mail</p>
+        </div>
+        <input onchange="leFoto()" id="fotoInput" type="file" name="fotoPerfil" value="fotoPerfil">
+        <div id="legenda">
+            <h3>Legenda</h3>
+            <textarea id="status" rows="3" cols="40" class="border-primary" required>Sem status.</textarea><br>
+            <button id="salvar" onclick="leStatus()" class="butao">SALVAR</button>
+        </div>
+            
+          <div>
+            <div class="darkmode cor">
+              <input type="checkbox" class="checkbox" id="chk" />
+              <label class="label" for="chk">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+                <div class="ball"></div>
+              </label>
+            </div>
+      
+            <div class="colorschange cor">
+              <input type="checkbox" class="checkbox" id="chk2" />
+              <label class="label" for="chk2">
+                <i class="fa fa-palette"></i>
+                <i class="fa fa-palette"></i>
+                <div class="ball"></div>
+              </label>
+            </div>
+          </div>
+         
+        
+          <script src="js/darkmode.js"></script>
+          <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+       
+        
+        <button onclick="sair()" id="sair">SAIR</button>
+
+    
+      </section>
+      <footer>
+        <ul class="foot-list">
+            <li>OUTRAS PÁGINAS</li>
+            <li><a href="sobrenos.html">SOBRE NÓS</a></li>
+            <li><a href="https://www.pucminas.br/destaques/Paginas/default.aspx">Portal PUC Minas</a></li>
+        </ul>
+
+          <img id="puc" src="images/logopuc.png" alt="Não foi possível carregar a imagem.">
+    </footer>
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        const urlParam = new URLSearchParams(location.search);
+        let ID_PERFIL = urlParam.get('id');
+
+        preenchePerfil(ID_PERFIL);
+        });
+      </script>
+      <script src="js/roteiro.js"></script>
+      <script src="js/navbar.js"></script>
+      <script>document.onload(iniciarPag())</script>
+</body>
+</html>

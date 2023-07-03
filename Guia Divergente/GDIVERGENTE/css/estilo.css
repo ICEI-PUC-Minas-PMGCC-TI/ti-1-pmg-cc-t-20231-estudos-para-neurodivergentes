@@ -1,0 +1,686 @@
+                        /*-----------------------
+                                 REGRAS PADRÃO
+     Essas regras CSS são aplicadas em todas (ou quase) as páginas do Guia Divergente
+                        ------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'AveriaRegular';
+  }
+
+body{
+    background-color: #dadada;
+    overflow-x: hidden;
+  }
+
+section{
+    background-color: aliceblue;
+    max-width: 1200px;
+    min-width: 280px;
+    padding: 30px;
+    margin: 0px auto;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+h1{
+    color: #000000;
+   
+    font-size: 200%;
+}
+
+p{
+    font-size: 25px;
+    text-align: justify;
+    padding: 10px;
+}
+
+.fotos{
+    max-width: 60%;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    margin-top: 10px;
+}
+
+.centralizar{
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    text-align: center;
+}
+
+.legenda{
+    font-size: 15px;
+    color: gray;
+}
+nav.dark{
+  background-color:#242494;
+}
+section.colored{
+background-color: darkorange;
+}
+section.dark{
+  background-color:#292c35;
+}
+section.dark h1{
+  color: white;
+}
+body.dark {
+ color: white;
+  background: black;
+}
+.darkmode .container-sm {
+  height:150px;
+  background-color: #9ab2db; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px; 
+}
+.darkmode .container-sm > div {
+  display: flex;
+}
+
+body.dark .container-sm {
+  background-color: #1a1c2400; 
+}
+body.dark .label{
+  background-color: black;
+}
+body.dark .label .ball{
+   background-color: #1a1c24;
+} 
+
+body.colored {
+ color: #071963;
+  background: #e8bc76;
+
+}
+.dark .back, .dark .membro{
+  background-color: #071963;
+}
+
+.dark .tchau{
+  color: #000000;
+}
+
+.dark #status{
+  background-color: #5c5f6b;
+}
+.colored p{
+  color: #071963;
+}
+.dark p {
+  color:#ffffff
+}
+.dark .card{
+  background-color: #262676;
+}
+.dark #comentarios{
+  background-color: #262676;
+}
+.dark h5{
+  color: white;
+}
+.dark #autorconversa a{
+  color: rgb(221, 214, 214);
+}
+.dark .cleber{
+  background-color: #334797;
+}
+
+.dark .nav-list{
+  background-color:#242494;
+}
+/*---------------------
+    NAV BAR
+---------------------*/
+  
+a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  a:hover {
+    opacity: 0.7;
+  }
+
+  .logo {
+    font-size: 28px;
+    letter-spacing: 4px;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #3030ff;
+    height: 12vh;
+  }
+  
+  .nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+  }
+  
+  .nav-list li {
+    margin-left: 36px;
+    color: #fff;
+  }
+
+  .nav-list li > a {
+    font-size: 20px;
+  }
+  
+
+/*---------------------
+    FOOTER
+---------------------*/
+
+footer{
+    background-color: #8e8e97;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.foot-list {
+    list-style: none;
+    align-items: center;
+  }
+
+  .foot-list li {
+    margin: 5px;
+  }
+
+  #puc{
+    width: 10%;
+  }
+
+                        /*-----------------------
+                            REGRAS ESPECÍFICAS
+                        ------------------------*/
+
+/*---------------------
+    TELA
+---------------------*/
+
+#tela{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: 'card card card';
+  grid-gap: 10px;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  
+  grid-gap: 10px;
+}
+
+/*---------------------
+    CARDS
+---------------------*/
+
+.card{
+  background-color: #bcbcff;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  margin: 0px auto;
+}
+
+.card-title{
+  font-size: 22px;
+}
+
+.card-text{
+  font-size: 18px;
+}
+
+.list-group-item{
+  list-style: none;
+}
+
+
+.btn{
+  background-color: rgb(114, 125, 223);
+}
+
+/*---------------------
+  APRESENTAÇÃO DE POST
+---------------------*/
+
+#cabeca{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'titulo titulo'
+    'subtitulo subtitulo'
+    'tag tag';
+    grid-gap: 10px;
+}
+
+#title{
+  grid-area: titulo;
+}
+
+#subtitle{
+  grid-area: subtitulo;
+}
+
+#tag{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: 'foto tipo tema user';
+  grid-area: tag;
+}
+
+.tag{
+  color: #a59898;
+  font-size: 20px;
+}
+
+#type{grid-area: tipo;} #genre{grid-area: tema;}
+
+#section{
+  align-items: center;
+}
+
+.contribuir{
+  background-color: #7070d8;
+  width: fit-content;
+  color: #fff;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.topo{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#comentarios{
+  width: 100%;
+  margin: 0 auto;
+  background-color: #bcbcff;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+#comentariosContainer{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 15px;
+}
+
+#comment{
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#enviarComment{
+  margin: 50px 0px 0px 20px;
+}
+
+#arroba{
+  color: #000000;
+}
+
+/*---------------------
+ APRESENTAÇÃO DE PERFIL
+---------------------*/
+
+.containerPerfil{
+  width: 70%;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.24), 0 1px 2px rgba(0,0,0,0.36);
+  position: relative;
+}
+
+#fotoPerfil{
+  width: 150px;
+  height: 150px;
+  margin: 5px;
+  border-radius: 100%;
+  border: 1px solid black;
+  box-shadow: 0 7px 10px rgba(0,0,0,2), 0 1px 2px rgba(0,0,0,5);
+}
+
+#fotoPerfil1{
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  border: 1px solid black;
+  box-shadow: 0 7px 10px rgba(0,0,0,2), 0 1px 2px rgba(0,0,0,5);
+}
+
+.informacoes{
+  color: #6b6b74;
+}
+
+#status{
+  padding: 10px;
+}
+
+#legenda{
+  grid-row: 2;
+  grid-column: 2/4;
+}
+
+#sair{
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  width: fit-content;
+  height: fit-content;
+  padding: 5px;
+  border: 1px solid black;
+  background-color: #580a0e;
+  color: #fff;
+  border-radius: 3px;
+}
+
+.butao{
+  width: fit-content;
+  height: fit-content;
+  padding: 5px;
+  border: 1px solid black;
+  background-color: #0a0a58;
+  color: #fff;
+  border-radius: 3px;
+}
+
+#fotoInput{
+  grid-column: 1;
+  margin-top: 5px;
+  display: none;
+}
+
+
+                                        /*---------------
+                                         PÁGINA DE LOGIN
+                                        ----------------*/
+
+  #login{
+    width: 30%;
+    margin-top: 100px;
+  }
+
+  
+                                    /*---------------------
+                                      BARRA LATERAL MOBILE
+                                    ----------------------*/
+
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+}
+    
+    .mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+    transition: 0.3s;
+    }
+    
+    @keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    }
+    
+    .mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+    }
+    
+    .mobile-menu.active .line2 {
+    opacity: 0;
+    }
+    
+    .mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+    }
+
+/*---------------------
+ SOBRE NÓS
+---------------------*/
+
+.membro{
+  display: grid;
+  background-color: #90a1e4;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+
+.eu{
+  width: 180px;
+  height: 180px;
+  border-radius: 100%;
+  margin: 0px;
+}
+
+.sobrenos{
+  font-size: 16px;
+  width: 50%;
+  color: floralwhite;
+  margin: 10px;
+}
+
+.oi{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.myname{
+  margin: 0 auto;
+  margin-bottom: 5px;
+}
+
+.tchau{
+  padding: 30px 30px 0px 0px;
+  color: #071963;
+}
+
+.nois{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+                                        /*---------------
+                                          MEDIA QUERIES
+                                        ---------------*/
+
+@media (max-width: 999px) {
+    body {
+      overflow-x: hidden;
+    }
+
+    .nois{
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+
+    .membro{
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    #tela{
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-areas: 'card';
+      justify-content: center;
+       align-items: center;
+    }
+
+    .card {
+      margin: 0 auto;
+    }
+  
+    .container{
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      
+      grid-gap: 10px;
+    }
+    
+    .nav-list {
+      position: absolute;
+      top: 8vh;
+      right: 0;
+      width: 50vw;
+      height: 92vh;
+      background: #3030ff;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      transform: translateX(100%);
+    }
+    .nav-list li {
+      margin: 0px auto;
+     
+      opacity: 0;
+    }
+    .mobile-menu {
+     
+      display: block;
+      z-index: 9999;
+    }
+
+    .fotos{
+        max-width: 100%;
+       
+    }
+
+    .informacoes{
+      font-size: 18px;
+    }
+
+    footer{
+        flex-wrap: wrap;
+    }
+    
+      #puc{
+        width: 20%;
+      }
+
+    .nav-list.active {
+      transform: translateX(0);
+    }
+  
+
+    .nav-list:not(.active) {
+      display: none;
+    }
+
+/*---------------------
+ APRESENTAÇÃO DE POST
+---------------------*/
+
+    #cabeca{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-areas: 'titulo'
+      'subtitulo'
+      'tag';
+      grid-gap: 10px;
+  }
+
+  #tag{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'foto foto'
+    'user user'
+    'tipo tema';
+    grid-area: tag;
+  }
+  
+  #comentariosContainer{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+    justify-content: center;
+  }
+/*---------------------
+ APRESENTAÇÃO DE PERFIL
+---------------------*/
+
+.containerPerfil{
+  width: 90%;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-areas: 'foto'
+  'foto'
+  'foto'
+  'nome'
+  'usuario'
+  'email'
+  'legenda';
+  margin: 40px 0px 40px 20px;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.24), 0 1px 2px rgba(0,0,0,0.36);
+  align-items: center;
+  
+}
+
+#fotoPerfil{
+  width: 180px;
+  height: 180px;
+  display: block;
+  margin: auto; 
+}
+
+#fotoContainer{
+  grid-area: foto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; 
+  height: 100%; 
+}
+
+#labelFoto{
+  display: flex;
+  justify-content: center;
+}
+
+.nome{grid-area: nome;}.usuario{grid-area: usuario;}.email{grid-area: email;}#legenda{grid-area: legenda;}
+
+#status{
+  width: 80%;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+#sair{
+  bottom: 10px;
+  right: 10px;
+}
+}

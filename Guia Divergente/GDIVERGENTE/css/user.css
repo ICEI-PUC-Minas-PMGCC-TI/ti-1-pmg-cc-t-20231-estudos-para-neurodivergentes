@@ -1,0 +1,259 @@
+nav.dark{
+  background-color:#242494;
+}
+section.colored{
+background-color: darkorange;
+}
+section.dark{
+  background-color:#292c35;
+}
+section.dark h1{
+  color: white;
+}
+body.dark {
+ color: white;
+  background: black;
+}
+.darkmode .container-sm {
+  height:150px;
+  background-color: #9ab2db; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px; 
+}
+.darkmode .container-sm > div {
+  display: flex;
+}
+
+body.dark .container-sm {
+  background-color: #1a1c2400; 
+}
+body.dark .label{
+  background-color: black;
+}
+body.dark .label .ball{
+   background-color: #1a1c24;
+} 
+
+body.colored {
+ color: #071963;
+  background: #e8bc76;
+
+}
+.colored p{
+  color: #071963;
+}
+.dark p {
+  color:#d0cccc
+}
+.dark .card{
+  background-color: #4141a1;
+}
+.dark #comentarios{
+  background-color: #262676;
+}
+.dark h5{
+  color: white;
+}
+.dark #autorconversa a{
+  color: rgb(221, 214, 214);
+}
+.dark .cleber{
+  background-color: #334797;
+}
+.dark button{
+  background-color: rgb(175, 172, 172);
+}
+
+
+/*---------------------
+    NAV BAR
+---------------------*/
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+.logo {
+  font-size: 28px;
+  letter-spacing: 4px;
+}
+
+nav {
+  
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #3030ff;
+  height: 12vh;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+}
+
+.nav-list li {
+  margin-left: 36px;
+  color: #fff;
+}
+
+.nav-list li > a {
+  font-size: 20px;
+}
+
+/*---------------
+    LOGIN
+----------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'AveriaRegular';
+  }
+  
+  body {
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed
+    
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 40px;
+  }
+  
+  .card {
+    background-color: #ffffff80;
+    padding: 30px;
+    border-radius: 4%;
+    box-shadow: 3px 3px 1px 0px #00000060;
+    width: 400px;
+  }
+  
+  h1{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #0d009c
+  }
+  
+  .label-float input{
+    width: 100%;
+    padding: 5px 5px;
+    display: inline-block;
+    border: 0;
+    border-bottom: 2px solid #0d009c;
+    background-color: transparent;
+    outline: none;
+    min-width: 180px;
+    font-size: 16px;
+    transition: all .3s ease-out;
+    border-radius: 0;
+    
+  }
+  
+  .label-float{
+    position: relative;
+    padding-top: 13px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  
+  .label-float input:focus{
+    border-bottom: 2px solid #4038a0;
+  }
+  
+  .label-float label{
+    color: #0d009c;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 13px;
+    transition: all .3s ease-out;
+  }
+  
+  .label-float input:focus + label,
+  .label-float input:valid + label{
+    font-size: 13px;
+    margin-top: 0;
+    color: #4038a0
+  }
+  
+  button{
+    background-color: transparent;
+    border-color: #0d009c;
+    color: #0d009c;
+    padding: 7px;
+    font-weight: bold;
+    font-size: 12pt;
+    margin-top: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    transition: all .4s ease-out;
+  }
+  
+  button:hover{
+    background-color: #0d009c;
+    color: #fff;
+  }
+  
+  .justify-center{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .fa-eye{
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    cursor: pointer;
+    color: #0d009c;
+  }
+  
+  #msgError{
+    text-align: center;
+    color: #ff0000;
+    background-color: #ffbbbb;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+  }
+  
+  #msgSuccess{
+    text-align: center;
+    color: #00bb00;
+    background-color: #bbffbe;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+  }
+
+  .centered{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+  a:hover{
+    opacity: 0.7;
+  }
